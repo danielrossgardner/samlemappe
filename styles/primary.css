@@ -42,13 +42,13 @@ body {
 }
 
 .primary-title {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 6px;
 }
 
 .desktop-menu ul {
-  font-size: 10px;
+  font-size: .8rem;
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -60,7 +60,7 @@ body {
 
 .art-title-container {
   width: 100%;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 150px);
   font-size: 200px;
   color: white;
   display: flex;
@@ -75,23 +75,32 @@ body {
   justify-content: space-around;
 }
 
+.top-spacer {
+  width: 100%;
+  height: 30px;
+  background: white;
+}
+
 section {
   width: 100%;
-  height: 100vh;
   background-color: rgba(255,255,255,1);
-  /*border: 1px solid blue;*/
 }
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  padding-top: 40px;
+}
+
 .about {
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.icon-holder {
-  height: 150px;
-  width: 150px;
 }
 
 .about-image {
@@ -104,6 +113,10 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.about-info {
+  padding-top: 40px;
 }
 
 .about-resume {
@@ -123,6 +136,7 @@ section {
 .about-resume:hover {
   bottom: 1px;
   right: 1px;
+  background-color: #4CAF50;
 }
 
 .about-resume:focus {
@@ -148,12 +162,111 @@ section {
 }
 
 .social-icon a:hover {
-    fill: #4CAF50; /* Green */
+  fill: #4CAF50; /* Green */
+}
+
+
+.experience-icons {
+  width: 720px;
+  margin: auto;
+}
+
+.icon-holder {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  float: left;
+  margin: 45px;
+}
+
+.icon-holder img {
+  height: 80%;
+}
+
+.mssql svg {
+  width: 80%;
+  height: auto;
+}
+
+.icon-title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  font-size: .7rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.projects-holder {
+  width: 720px;
+  margin: auto;
+}
+
+.project {
+  position: relative;
+  padding: 5px;
+  width: 315px;
+  height: 315px;
+  margin: 22.5px;
+  border: 1px solid black;
+  float: left;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.project-img img {
+  width: 100%;
+}
+
+.project-about {
+  padding-top: 5px;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.project-links {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+
+.project button {
+  width: 45%;
+  background-color: black;
+  border: none;
+}
+
+.project a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.project button:hover {
+  bottom: 1px;
+  right: 1px;
+  background-color: #4CAF50;
+}
+
+.project button:focus {
+  outline: none;
+  background-color: #4CAF50;
 }
 
 .line-holder {
   position: relative;
   height: 9px;
+  clear: both;
 }
 
 .left-line {
