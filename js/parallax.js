@@ -26,6 +26,7 @@ $(window).scroll(function(){
         'transform': 'translate(0px, '+ winScroll /40 +'%)'
       });
 
+
       //https://unsplash.com?photo=TilfTdj3x6U
       //https://unsplash.com?photo=2zLEAIZi92M
       //https://unsplash.com/search/chicken?photo=LdYXkt5zeL0
