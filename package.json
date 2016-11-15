@@ -1,0 +1,29 @@
+{
+  "name": "samlemappe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bowshanks/samlemappe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bowshanks/samlemappe/issues"
+  },
+  "homepage": "https://github.com/bowshanks/samlemappe#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0"
+  },
+  "engine": {
+    "node": "6.6.0",
+    "npm": "3.10.7"
+  }
+}
