@@ -5,6 +5,16 @@ body {
   font-family: 'Poppins', sans-serif;
   position: relative;
 }
+
+.mobile-header {
+  display: none;
+}
+
+.symbol {
+  height: 50px;
+  width: 50px;
+}
+
 .parallax-holder {
   position: absolute;
   padding-top: 100px;
@@ -346,6 +356,68 @@ footer {
     visibility: visible;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
+  .mobile-header {
+    display: block;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .menu-button-holder {
+    width: 25%;
+    height: auto;
+  }
+
+  .menu-button {
+    height: 50px;
+    margin: auto;
+  }
+
+  .parallax-holder {
+    padding-top: 0;
+  }
+
+  .main-container header {
+    display: none;
+  }
+
+  .experience-icons {
+    width: 480px;
+  }
+
+  .projects-holder {
+    width: 480px;
+  }
+
+}
+
+@media (max-width: 481px) {
+  .main-container header {
+    display: none;
+  }
+
+  .experience-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .icon-holder {
+    float: none;
+  }
+
+  .projects-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .project {
+    float: none;
+  }
 
 }
