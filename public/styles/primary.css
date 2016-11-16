@@ -27,7 +27,6 @@ body {
 .main-container {
   position: relative;
   padding: 20px 30px 20px 30px;
-  height:100px;
   width: 100%;
   background-color: rgba(255,255,255,0);
   z-index: 2;
@@ -91,6 +90,15 @@ section {
   background-color: rgba(255,255,255,1);
 }
 
+section:before,
+section:after {
+    content : "";
+    display : block;
+}
+section:after {
+    clear : both;
+}
+
 .section-title {
   width: 100%;
   text-align: center;
@@ -137,10 +145,6 @@ section {
   position: relative;
 }
 
-/*button {
-  box-shadow: 1px 1px 5px 1px #888888;
-}*/
-
 .about-resume:hover {
   bottom: 1px;
   right: 1px;
@@ -170,9 +174,8 @@ section {
 }
 
 .social-icon a:hover {
-  fill: #4CAF50; /* Green */
+  fill: #4CAF50;
 }
-
 
 .experience-icons {
   width: 720px;
@@ -304,7 +307,45 @@ section {
   background-color: black;
 }
 
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  clear: both;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  font-weight: 300;
+  z-index: 3;
+}
 
-@media (min-width: 768px) {
+.attribution {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    text-align: left;
+    border: 1px solid white;
+    background-color: black;
+    display: inline-block;
+    padding: 5px;
+    font-size: .7rem;
+    /*padding: 5px 0;*/
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 5%;
+}
+
+.attribution:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
 
 }
