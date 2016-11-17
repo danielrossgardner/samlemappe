@@ -358,19 +358,69 @@ footer {
 
 @media (max-width: 769px) {
   .mobile-header {
-    display: block;
     width: 100%;
     height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
   .menu-button-holder {
     width: 25%;
-    height: auto;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .menu-button {
-    height: 50px;
+    position: relative;
+  }
+
+  .menu-holder {
+      visibility: hidden;
+      text-align: left;
+      background-color: black;
+      display: inline-block;
+      font-size: .7rem;
+      /*padding: 5px 0;*/
+
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 3;
+      top: 100%;
+      left: 5%;
+  }
+
+  .menu-button-holder:hover .menu-holder {
+      visibility: visible;
+  }
+
+  .menu-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .menu-button li {
+    padding: 5px;
+    border: 1px solid white;
+  }
+
+  .mobile-primary-title {
+    width: 75%;
+    height: auto;
+    padding-top: 30px;
     margin: auto;
+  }
+
+  .menu-button {
+    margin: auto;
+  }
+
+  .menu-button svg {
+    height: 50px;
+    width: 50px;
   }
 
   .parallax-holder {
@@ -394,6 +444,10 @@ footer {
 @media (max-width: 481px) {
   .main-container header {
     display: none;
+  }
+
+  .mobile-primary-title {
+    font-size: 1rem;
   }
 
   .experience-icons {
