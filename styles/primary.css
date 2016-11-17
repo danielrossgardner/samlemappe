@@ -374,30 +374,21 @@ footer {
     justify-content: center;
   }
 
-  .menu-button {
-    position: relative;
-  }
-
   .menu-holder {
-      visibility: hidden;
-      text-align: left;
-      background-color: black;
-      display: inline-block;
-      font-size: .7rem;
-      /*padding: 5px 0;*/
-
-      /* Position the tooltip */
-      position: absolute;
-      z-index: 3;
-      top: 100%;
-      left: 5%;
+    visibility: hidden;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+    z-index: 4;
+    padding: 30px;
   }
 
-  .menu-button-holder:hover .menu-holder {
-      visibility: visible;
+  .menu-holder li {
+    margin-bottom: 30px;
   }
 
-  .menu-button a {
+  .menu-holder a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
