@@ -5,6 +5,39 @@ body {
   font-family: 'Poppins', sans-serif;
   position: relative;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-holder {
+  visibility: hidden;
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background-color: black;
+  z-index: 4;
+  padding: 30px;
+}
+
+.menu-holder li {
+  margin-bottom: 30px;
+}
+
+.menu-holder a {
+  font-size: 1rem;
+}
+
+.mobile-header {
+  display: none;
+}
+
+.symbol {
+  height: 50px;
+  width: 50px;
+}
+
 .parallax-holder {
   position: absolute;
   padding-top: 100px;
@@ -25,6 +58,7 @@ body {
 
 
 .main-container {
+  overflow-x: hidden;
   position: relative;
   padding: 20px 30px 20px 30px;
   width: 100%;
@@ -53,7 +87,6 @@ body {
 }
 
 .desktop-menu a {
-  text-decoration: none;
   color: black;
 }
 
@@ -166,8 +199,6 @@ section:after {
 
 .social-icon a{
   display: block;
-  text-decoration: none;
-  color: white;
   height: 30px;
   width: 30px;
   fill: black;
@@ -258,8 +289,6 @@ section:after {
 }
 
 .project a {
-  text-decoration: none;
-  color: white;
   font-size: 1.5rem;
 }
 
@@ -346,6 +375,92 @@ footer {
     visibility: visible;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
+  .mobile-header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .menu-button-holder {
+    width: 25%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mobile-primary-title {
+    width: 75%;
+    height: auto;
+    padding-top: 30px;
+    margin: auto;
+  }
+
+  .menu-button {
+    margin: auto;
+  }
+
+  .menu-button svg {
+    height: 50px;
+    width: 50px;
+  }
+
+  .parallax-holder {
+    padding-top: 0;
+  }
+
+  .about-resume {
+    width:auto;
+  }
+
+  .main-container header {
+    display: none;
+  }
+
+  .experience-icons {
+    width: 480px;
+  }
+
+  .projects-holder {
+    width: 480px;
+  }
+
+}
+
+@media (max-width: 481px) {
+  .main-container header {
+    display: none;
+  }
+
+  .mobile-primary-title {
+    font-size: 1rem;
+  }
+
+  .experience-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .icon-holder {
+    float: none;
+  }
+
+  .projects-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .project {
+    float: none;
+  }
 
 }
