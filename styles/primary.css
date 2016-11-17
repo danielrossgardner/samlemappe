@@ -6,6 +6,26 @@ body {
   position: relative;
 }
 
+.menu-holder {
+  visibility: hidden;
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  background-color: black;
+  z-index: 4;
+  padding: 30px;
+}
+
+.menu-holder li {
+  margin-bottom: 30px;
+}
+
+.menu-holder a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
 .mobile-header {
   display: none;
 }
@@ -372,31 +392,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .menu-holder {
-    visibility: hidden;
-    position: fixed;
-    width: 50%;
-    height: 100vh;
-    background-color: black;
-    z-index: 4;
-    padding: 30px;
-  }
-
-  .menu-holder li {
-    margin-bottom: 30px;
-  }
-
-  .menu-holder a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-  }
-
-  .menu-button li {
-    padding: 5px;
-    border: 1px solid white;
   }
 
   .mobile-primary-title {
