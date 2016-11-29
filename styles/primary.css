@@ -176,6 +176,7 @@ section:after {
   background-color: black;
   border: none;
   position: relative;
+  cursor: pointer;
 }
 
 .about-resume:hover {
