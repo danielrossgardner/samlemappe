@@ -42,6 +42,7 @@ a {
   position: absolute;
   padding-top: 100px;
   border: 30px solid white;
+  background-color: white;
   width: 100%;
   z-index: 1;
 }
