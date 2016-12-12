@@ -42,7 +42,6 @@ a {
   position: absolute;
   padding-top: 100px;
   border: 30px solid white;
-  background-color: white;
   width: 100%;
   z-index: 1;
 }
@@ -310,6 +309,7 @@ a {
 }
 
 .line-holder {
+  background-color: white;
   position: relative;
   height: 9px;
   clear: both;
