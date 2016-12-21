@@ -168,6 +168,9 @@ section:after {
 a {
   cursor: pointer;
 }
+button {
+  cursor: pointer;
+}
 
 .about-resume {
   width: 100px;
@@ -287,17 +290,21 @@ a {
   right: 0;
 }
 
-.project button {
+.project a {
   width: 45%;
   background-color: black;
-  border: none;
 }
 
-.project a {
+.project button {
   font-size: 1.5rem;
+  background-color: inherit;
+  border: none;
+  color: white;
+  text-align: center;
+  width: 100%;
 }
 
-.project button:hover {
+.project a:hover {
   bottom: 1px;
   right: 1px;
   background-color: #4CAF50;
